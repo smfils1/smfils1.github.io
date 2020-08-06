@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/";
 import { LinkedIn, Email, GitHub } from "@material-ui/icons";
 
 import content from "../content.json";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",

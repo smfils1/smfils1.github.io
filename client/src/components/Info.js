@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: "center",
     backgroundColor: "white",
   },
+  title: {
+    color: grey[300],
+  },
 }));
 
 const Info = () => {
