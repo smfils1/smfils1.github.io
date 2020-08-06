@@ -11,17 +11,20 @@ import {
 } from "@material-ui/core";
 
 import NavItem from "../NavItem";
+import Contacts from "../../Contacts";
 import { toggleDrawer } from "../../../redux/actions/layout";
 import content from "../../../content.json";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+  },
   img: {
     width: 110,
     height: 110,
     borderRadius: "50%",
-  },
-  mainNav: {
-    height: "100%",
   },
   mainNavLinks: {
     height: "30%",
@@ -41,6 +44,12 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     color: grey[500],
+  },
+  contacts: {
+    alignSelf: "center",
+  },
+  grow: {
+    flexGrow: 1,
   },
 }));
 
@@ -68,11 +77,15 @@ const MainNavMenu = () => {
   );
 
   return (
-    <List className={classes.mainNav}>
+    <List className={classes.root}>
       <Profile name={content.fullName} career={content.career} />
       <div className={classes.mainNavLinks}>
         <NavItem to="/" title="Home" onClick={handleItemClick} />{" "}
         <NavItem title="Portfolio" onClick={handleItemClick} />
+      </div>
+      <div className={classes.grow} />
+      <div className={classes.contacts}>
+        <Contacts />
       </div>
     </List>
   );

@@ -2,9 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar } from "@material-ui/core";
 import StartNav from "./StartNav";
+import EndNav from "./EndNav";
 
 const useStyles = makeStyles((theme) => ({
-  root: {},
   grow: {
     flexGrow: 1,
   },
@@ -29,6 +29,9 @@ const TopNav = () => {
       {/* <CssBaseline /> */}
       <AppBar elevation={0} position="fixed" className={classes.appBar}>
         <StartNav />
+        <div className={classes.grow} />
+
+        <EndNav />
       </AppBar>
     </div>
   );

@@ -1,12 +1,11 @@
 import React from "react";
-import { makeStyles, Typography } from "@material-ui/core/";
+import { makeStyles, Typography, Button } from "@material-ui/core/";
 import content from "../content.json";
 import { grey } from "@material-ui/core/colors";
 import { School, Email, LocationOn } from "@material-ui/icons";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    height: 150,
     display: "flex",
     flexDirection: "column",
     color: "white",
@@ -18,7 +17,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icon: {
-    margin: theme.spacing(0.5),
+    margin: theme.spacing(0.5, 1),
+  },
+  btn: {
+    margin: theme.spacing(1),
+    alignSelf: "center",
+    backgroundColor: "white",
   },
 }));
 
@@ -46,6 +50,9 @@ const Info = () => {
         <Typography variant="caption" className={classes.title}>
           {content.location}
         </Typography>
+      </div>
+      <div className={classes.btn}>
+        <Button>Download Resume</Button>
       </div>
     </div>
   );
