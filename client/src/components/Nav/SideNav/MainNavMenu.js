@@ -57,7 +57,7 @@ const MainNavMenu = () => {
 
   const Profile = ({ name, career }) => (
     <div className={classes.profile}>
-      <img className={classes.img} src={content.profilePic1} />
+      <img alt="profile" className={classes.img} src={content.profilePic1} />
       <Typography variant="h5" className={classes.title}>
         {name}
       </Typography>

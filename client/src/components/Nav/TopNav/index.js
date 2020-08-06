@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, useTheme } from "@material-ui/core";
-import { useSelector } from "react-redux";
+import { AppBar } from "@material-ui/core";
 import StartNav from "./StartNav";
 
 const useStyles = makeStyles((theme) => ({
@@ -24,10 +23,6 @@ const useStyles = makeStyles((theme) => ({
 
 const TopNav = () => {
   const classes = useStyles();
-  const theme = useTheme();
-  const isMobileSearchClick = useSelector(
-    ({ layout }) => layout.isMobileSearchClick
-  );
 
   return (
     <div>

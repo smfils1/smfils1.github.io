@@ -1,5 +1,10 @@
 {
-  "profilePic1": "https://via.placeholder.com/200x200",
+  "profilePic1": "https://avatars0.githubusercontent.com/u/29187338?s=460&u=82a7f99ca32bdc071b2c28b7179c51a782cae270&v=4",
+  "profilePic2": "https://images.unsplash.com/photo-1587614297096-ae5dfdb05181?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
   "fullName": "Samuel Fils",
-  "career": "Software Engineer"
+  "career": "Software Engineer",
+  "shortAboutMe": "a  software engineer specialized in both front-end and back-end technologies.",
+  "education": "Computer Science, B.S.",
+  "location": "New York City",
+  "email": "smfils1@gmail.com"
 }

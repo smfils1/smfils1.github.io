@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Home from "./components/Pages/HomePage";
+import Home from "./components/Pages";
 import Nav from "./components/Nav";
 
 function App() {
