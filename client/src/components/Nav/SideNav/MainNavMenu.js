@@ -80,8 +80,8 @@ const MainNavMenu = () => {
     <List className={classes.root}>
       <Profile name={content.fullName} career={content.career} />
       <div className={classes.mainNavLinks}>
-        <NavItem to="/" title="Home" onClick={handleItemClick} />{" "}
-        <NavItem title="Portfolio" onClick={handleItemClick} />
+        <NavItem to="home" title="Home" onClick={handleItemClick} />{" "}
+        <NavItem to="portfolio" title="Portfolio" onClick={handleItemClick} />
       </div>
       <div className={classes.grow} />
       <div className={classes.contacts}>

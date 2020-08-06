@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import { ListItem, ListItemText } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { grey } from "@material-ui/core/colors";
@@ -16,15 +16,15 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   link: {
-    color: "inherit" /* blue colors for links too */,
-    textDecoration: "none" /* no underline */,
-    "&:hover": {
-      color: "inherit" /* blue colors for links too */,
-    },
+    color: "inherit",
   },
   text: {
     fontSize: "1.3em",
     fontWeight: 100,
+    "&:hover": {
+      textDecoration: "underline",
+    },
+    cursor: "pointer",
   },
 }));
 
@@ -37,9 +37,9 @@ const NavItem = ({ to, title, onClick }) => {
   );
 
   return to ? (
-    <NavLink to={to} className={classes.link}>
+    <Link to={to} smooth={true} duration={1000} className={classes.link}>
       {Item}
-    </NavLink>
+    </Link>
   ) : (
     <> {Item} </>
   );
