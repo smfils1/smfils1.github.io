@@ -10,6 +10,8 @@ import content from "../../content.json";
 import Info from "../Info";
 import { grey } from "@material-ui/core/colors";
 import clsx from "clsx";
+
+import Project from "../Project";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -58,6 +60,7 @@ const Portfolio = () => {
           dangerouslySetInnerHTML={{ __html: content.description }}
         />
       </div>
+      <Project />
     </div>
   );
 };
