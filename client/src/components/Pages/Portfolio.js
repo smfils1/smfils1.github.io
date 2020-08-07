@@ -1,15 +1,7 @@
 import React from "react";
-import {
-  makeStyles,
-  Container,
-  Typography,
-  useTheme,
-  useMediaQuery,
-} from "@material-ui/core/";
+import { makeStyles, Typography } from "@material-ui/core/";
 import content from "../../content.json";
-import Info from "../Info";
 import { grey } from "@material-ui/core/colors";
-import clsx from "clsx";
 
 import Experiences from "../Experiences";
 const useStyles = makeStyles((theme) => ({
@@ -22,17 +14,6 @@ const useStyles = makeStyles((theme) => ({
     },
     backgroundColor: grey[100],
   },
-  landing: {
-    padding: theme.spacing(2),
-    paddingTop: theme.spacing(10),
-    height: "100vh",
-    width: "100%",
-    backgroundImage: `url(${content.profilePic2})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    // filter: "grayScale(50%)",
-    position: "relative",
-  },
   text: {
     paddingBottom: theme.spacing(2),
   },
@@ -40,15 +21,12 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0.5),
     color: "white",
     backgroundColor: "black",
-    display: "inline", //
+    display: "inline",
   },
 }));
 
 const Portfolio = () => {
   const classes = useStyles();
-
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.only("xs"));
 
   return (
     <div className={classes.root} id="portfolio">
@@ -58,7 +36,7 @@ const Portfolio = () => {
       <div>
         {" "}
         <Typography
-          className={clsx(classes.description, classes.tedxt)}
+          className={classes.description}
           variant="body1"
           dangerouslySetInnerHTML={{ __html: content.description }}
         />

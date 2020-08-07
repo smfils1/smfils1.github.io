@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles, Typography, Button, Grid } from "@material-ui/core/";
-import content from "../../content.json";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./overrides.css";
@@ -53,7 +52,13 @@ const useStyles = makeStyles((theme) => ({
 const VideoItem = ({ video }) => {
   return (
     <div className="video-wrapper">
-      <iframe width="100%" src={video} frameBorder="0" allowFullScreen></iframe>
+      <iframe
+        width="100%"
+        title="video"
+        src={video}
+        frameBorder="0"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Divider } from "@material-ui/core/";
+import { Divider } from "@material-ui/core/";
 import { Timeline, TimelineEvent } from "react-event-timeline";
 import Project from "./Project";
 import content from "../content.json";

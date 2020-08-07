@@ -1,7 +1,6 @@
 import React from "react";
 import {
   makeStyles,
-  Container,
   Typography,
   useTheme,
   useMediaQuery,
@@ -27,7 +26,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${content.profilePic2})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    // filter: "grayScale(50%)",
     position: "relative",
   },
   writer: {
@@ -46,11 +44,6 @@ const useStyles = makeStyles((theme) => ({
     textShadow: "1px 1px 1px rgb(0, 0, 0)",
     marginBottom: theme.spacing(1),
   },
-  img: {
-    // flex: " 0 0 41.666667%",
-    // maxWidth: "41.666667%",
-    alignSelf: "center",
-  },
   info: {
     padding: theme.spacing(4),
     display: "flex",
@@ -58,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: grey[300],
   },
   mobile_info: {
-    //transform: "translate(-50%, 0)",
     position: "absolute",
     bottom: theme.spacing(4),
     right: theme.spacing(4),

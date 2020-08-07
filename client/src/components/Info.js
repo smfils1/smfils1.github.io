@@ -55,7 +55,7 @@ const Info = () => {
         </Typography>
       </div>
       <div className={classes.btn}>
-        <Button>Download Resume</Button>
+        <Button href={content.resume}>Resume</Button>
       </div>
     </div>
   );

@@ -3,6 +3,7 @@
   "profilePic2": "https://images.unsplash.com/photo-1587614297096-ae5dfdb05181?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
   "fullName": "Samuel Fils",
   "career": "Software Engineer",
+  "resume": "https://docs.google.com/document/d/1gQoJcloUng-LnQJGRvsE99X1c3ciP9Bbzs55t2k26LY/edit",
   "shortAboutMe": {
     "base": "a  software engineer specialized in ",
     "loop": ["back-end technologies.", "front-end technologies."]

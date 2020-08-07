@@ -13,11 +13,6 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(0.5, 1),
     color: "white",
   },
-  btn: {
-    margin: theme.spacing(1),
-    alignSelf: "center",
-    backgroundColor: "white",
-  },
 }));
 
 const Contacts = () => {
