@@ -9,18 +9,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexWrap: "wrap",
-    padding: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
   },
   title: {
     paddingBottom: theme.spacing(1),
   },
   details: {
     padding: theme.spacing(1, 0),
+    [theme.breakpoints.down("xs")]: {
+      padding: theme.spacing(0),
+    },
   },
   tag: {
     color: "black",
     background: "white",
-    border: "solid 2px black",
+    border: "solid 2px rgb(201, 163, 143)",
     padding: theme.spacing(0.5, 1),
     margin: theme.spacing(1),
     marginLeft: theme.spacing(0),
@@ -48,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Project = ({ project }) => {
-  project = content.projects[0];
   const classes = useStyles();
   const images = project.images.map((image) => ({
     original: image,

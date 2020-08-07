@@ -17,6 +17,43 @@
     {
       "title": "Lorem ipsum dolor sit amet",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis harum nobis ab maxime ex, at dolores non reiciendis!",
+      "time": "2019 - 2020",
+      "details": [
+        "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!",
+        "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!"
+      ],
+      "technologies": ["Adipisci", "Adipisci", "Adipisci", "Adipisci"],
+      "images": [
+        "https://via.placeholder.com/600",
+        "https://via.placeholder.com/300",
+        "https://via.placeholder.com/300",
+        "https://via.placeholder.com/300"
+      ],
+      "repo": "#",
+      "application": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis harum nobis ab maxime ex, at dolores non reiciendis!",
+      "time": "2019 - 2020",
+      "details": [
+        "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!",
+        "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!"
+      ],
+      "technologies": ["Adipisci", "Adipisci", "Adipisci", "Adipisci"],
+      "images": [
+        "https://via.placeholder.com/600",
+        "https://via.placeholder.com/300",
+        "https://via.placeholder.com/300",
+        "https://via.placeholder.com/300"
+      ],
+      "repo": "#",
+      "application": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis harum nobis ab maxime ex, at dolores non reiciendis!",
+      "time": "2019 - 2020",
       "details": [
         "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!",
         "Adipisci, nobis repellendus minima animi dolor molestiae nesciunt quas dolores tenetur eum!"

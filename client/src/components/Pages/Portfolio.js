@@ -11,12 +11,15 @@ import Info from "../Info";
 import { grey } from "@material-ui/core/colors";
 import clsx from "clsx";
 
-import Project from "../Project";
+import Experiences from "../Experiences";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
     padding: theme.spacing(4),
+    [theme.breakpoints.down("xs")]: {
+      padding: theme.spacing(2),
+    },
     backgroundColor: grey[100],
   },
   landing: {
@@ -60,7 +63,7 @@ const Portfolio = () => {
           dangerouslySetInnerHTML={{ __html: content.description }}
         />
       </div>
-      <Project />
+      <Experiences />
     </div>
   );
 };
