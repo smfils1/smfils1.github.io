@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     margin: theme.spacing(0, 1),
   },
-  images: {
+  media: {
     height: "100%",
     maxWidth: 350,
     padding: theme.spacing(2),
@@ -50,12 +50,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const VideoItem = ({ video }) => {
+  return (
+    <div className="video-wrapper">
+      <iframe width="100%" src={video} frameBorder="0" allowFullScreen></iframe>
+    </div>
+  );
+};
+
 const Project = ({ project }) => {
   const classes = useStyles();
-  const images = project.images.map((image) => ({
-    original: image,
-    thumbnail: image,
-  }));
+  const media = project.media.map(({ type, src }) => {
+    if (type === "image") {
+      return {
+        original: src,
+        thumbnail: src,
+      };
+    } else {
+      return {
+        renderItem: () => <VideoItem video={src} />,
+        embedUrl: src,
+        thumbnail: "https://via.placeholder.com/150?text=VIDEO",
+      };
+    }
+  });
   const Tag = ({ value }) => <div className={classes.tag}>{value}</div>;
 
   return (
@@ -100,12 +118,12 @@ const Project = ({ project }) => {
           </div>
         </Grid>
         <Grid item xs={12} sm={4} alignItems="center">
-          <div className={classes.images}>
+          <div className={classes.media}>
             <ImageGallery
               originalClass={"testing"}
               thumbnailClass={"testing"}
-              items={images}
-              defaultImage={project.images[0]}
+              items={media}
+              defaultImage={media[0]}
               showThumbnails={true}
               showNav={false}
               lazyLoad={true}
