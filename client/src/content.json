@@ -20,7 +20,7 @@
       "time": "2020",
       "details": [
         "Google OAuth2",
-        "video upload, streaming, commenting, and rating",
+        "video uploading, streaming, commenting, and rating",
         "trending, recommended, and categorized videos"
       ],
       "technologies": [
@@ -35,16 +35,15 @@
         "Material UI"
       ],
       "media": [
-        { "type": "image", "src": "" },
-        { "type": "image", "src": "" },
-        { "type": "image", "src": "" }
+        { "type": "image", "src": "https://i.imgur.com/68MnqX6.jpg" },
+        { "type": "image", "src": "https://i.imgur.com/o38NoNI.jpg" }
       ],
       "repo": "https://github.com/smfils1/youtube-clone",
       "application": "https://smfils1-youtube-clone.herokuapp.com/"
     },
     {
       "title": "SoS",
-      "description": "SoS is an open-source FPS game where I was the project manager. I was involved build some game mechanics, building the entire beta website, and setting up continous delivery for both the beta website & gaming repo using Github Actions.",
+      "description": "SoS is an open-source FPS game where I was the project manager. I was involved in building some game mechanics, building the entire beta website, and setting up continous delivery for both the beta website & gaming repo using Github Actions.",
       "time": "2020",
       "details": [
         "a online web FPS game",
@@ -56,7 +55,7 @@
         "Unity3D",
         "React.js",
         "Bootstrap 4",
-        "Github Action"
+        "Github Actions"
       ],
       "media": [
         { "type": "image", "src": "https://i.imgur.com/xJnyo8w.jpg" },
@@ -93,15 +92,15 @@
       "media": [
         {
           "type": "image",
-          "src": ""
+          "src": "https://i.imgur.com/Xs1rjTO.png"
         },
         {
           "type": "image",
-          "src": ""
+          "src": "https://i.imgur.com/zkaH3Id.png"
         },
         {
           "type": "image",
-          "src": ""
+          "src": "https://i.imgur.com/E2nKKDi.png"
         }
       ],
 
@@ -114,7 +113,7 @@
       "time": "2019",
       "details": [
         "dashboard filters reports through defined tags",
-        "automated and non-automated messages to tweet user's",
+        "automated and non-automated report twitter responses",
         "live report feed & map view"
       ],
       "technologies": [
@@ -174,15 +173,7 @@
       "media": [
         {
           "type": "image",
-          "src": ""
-        },
-        {
-          "type": "image",
-          "src": ""
-        },
-        {
-          "type": "image",
-          "src": ""
+          "src": "https://i.imgur.com/pCo1ZIG.jpg"
         }
       ],
       "repo": "https://github.com/smfils1/weather-app",
