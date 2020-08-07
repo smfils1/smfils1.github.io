@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
   },
   images: {
     height: "100%",
-    width: "100%",
+    maxWidth: 350,
     padding: theme.spacing(2),
     display: "flex",
     justifyContent: "center",
