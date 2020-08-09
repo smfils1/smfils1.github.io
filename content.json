@@ -1,0 +1,184 @@
+{
+  "profilePic1": "https://avatars0.githubusercontent.com/u/29187338?s=460&u=82a7f99ca32bdc071b2c28b7179c51a782cae270&v=4",
+  "profilePic2": "https://images.unsplash.com/photo-1587614297096-ae5dfdb05181?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80",
+  "fullName": "Samuel Fils",
+  "career": "Software Engineer",
+  "resume": "https://docs.google.com/document/d/1XSLMufzAiU8ePbKctS1uxjaukTt9SPMTGw6J_lLwzt4/edit",
+  "shortAboutMe": {
+    "base": "a  software engineer specialized in ",
+    "loop": ["back-end technologies.", "front-end technologies."]
+  },
+  "education": "Computer Science, B.S.",
+  "location": "New York City",
+  "email": "smfils1@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/samuel-fils/",
+  "github": "smfils1",
+  "description": " See my journey as a software engineer. Unless explicitly stated otherwise,<strong> all project back-end and front-end parts were completely done by me. </strong>",
+  "projects": [
+    {
+      "title": "YouTube Clone",
+      "description": "This is a personal project that attempts to implement the main features of YouTube, an online video-sharing platform, using the MERN stack.",
+      "time": "2020",
+      "details": [
+        "Google OAuth2",
+        "video uploading, streaming, commenting, and rating",
+        "trending, recommended, and categorized videos"
+      ],
+      "technologies": [
+        "MongoDB",
+        "Mongoose",
+        "Node.js",
+        "FFMPEG",
+        "Google Drive API",
+        "Google OAuth2",
+        "React.js",
+        "Redux",
+        "Material UI"
+      ],
+      "media": [
+        { "type": "image", "src": "https://i.imgur.com/68MnqX6.jpg" },
+        { "type": "image", "src": "https://i.imgur.com/o38NoNI.jpg" }
+      ],
+      "repo": "https://github.com/smfils1/youtube-clone",
+      "application": "https://smfils1-youtube-clone.herokuapp.com/"
+    },
+    {
+      "title": "SoS",
+      "description": "SoS is an open-source FPS game where I was the project manager. I was involved in building some game mechanics, building the entire beta website, and setting up continous delivery for both the beta website & gaming repo using Github Actions.",
+      "time": "2020",
+      "details": [
+        "a online web FPS game",
+        "plug and play (keyboard or gamepad controls)",
+        "a game of survival"
+      ],
+      "technologies": [
+        "C#",
+        "Unity3D",
+        "React.js",
+        "Bootstrap 4",
+        "Github Actions"
+      ],
+      "media": [
+        { "type": "image", "src": "https://i.imgur.com/xJnyo8w.jpg" },
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/embed/5rKN7FuBIOA"
+        }
+      ],
+      "repo": "https://github.com/smfils1/SoS",
+      "application": "https://smfils1.github.io/SoS-web/"
+    },
+    {
+      "title": "Counter App",
+      "description": "This is a personal project which is more than a simple counter app. The main goal of the project was to implement an authentication system and show updates in realtime across multiple users using the MERN stack.",
+      "time": "2020",
+      "details": [
+        "Google OAuth2",
+        "email & password",
+        "forgot password",
+        "realtime updates",
+        "history logs"
+      ],
+      "technologies": [
+        "Socket.io",
+        "Sendgrid API",
+        "MongoDB",
+        "Mongoose",
+        "Node.js",
+        "Json Web Tokens",
+        "React.js",
+        "Redux",
+        "Formik"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://i.imgur.com/Xs1rjTO.png"
+        },
+        {
+          "type": "image",
+          "src": "https://i.imgur.com/zkaH3Id.png"
+        },
+        {
+          "type": "image",
+          "src": "https://i.imgur.com/E2nKKDi.png"
+        }
+      ],
+
+      "repo": "https://github.com/smfils1/mern-boilerplate",
+      "application": "https://smfils1-mern-boilerplate.herokuapp.com/"
+    },
+    {
+      "title": "HashTag HotLine",
+      "description": "This is an open-source application where my main role was building the backend architecture and unit tests using AWS microservices like DynamoDB, Lambda, and Amplify. HashTag Hotline is an online, location-based twitter communications application for NGO's in the Global South.",
+      "time": "2019",
+      "details": [
+        "dashboard filters reports through defined tags",
+        "automated and non-automated report twitter responses",
+        "live report feed & map view"
+      ],
+      "technologies": [
+        "React.js",
+        "Node.js",
+        "Material UI",
+        "GraphQL",
+        "AWS Amplify",
+        "DynamoDB",
+        "AWS Lambda",
+        "AWS Cognito",
+        "Twitter API",
+        "Testing Library",
+        "Jest",
+        "Pupputeer"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://github.com/Hongzred/HashTag_HotLine/raw/master/README_images/image-20191221002258455.png"
+        },
+        {
+          "type": "image",
+          "src": "https://github.com/Hongzred/HashTag_HotLine/raw/master/README_images/image-20191221000649380.png"
+        },
+        {
+          "type": "image",
+          "src": "https://github.com/Hongzred/HashTag_HotLine/raw/master/README_images/ezgif-1-12eed0724411.gif"
+        },
+        {
+          "type": "image",
+          "src": "https://github.com/Hongzred/HashTag_HotLine/raw/master/README_images/image-20191220182526362.png"
+        }
+      ],
+
+      "repo": "https://github.com/Hongzred/HashTag_HotLine",
+      "application": "https://master.d2nb81n0vt6kb5.amplifyapp.com/"
+    },
+    {
+      "title": "Weather App",
+      "description": "This is a server-side location based weather app using Node.js.",
+      "time": "2019",
+      "details": [
+        "location based weather reports",
+        "weather search",
+        "location autocomplete"
+      ],
+      "technologies": [
+        "Bootstrap 4",
+        "EJS",
+        "Node.js",
+        "Express.js",
+        "Mapbox API",
+        "Darksky API",
+        "Algolia Places API"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "https://i.imgur.com/pCo1ZIG.jpg"
+        }
+      ],
+      "repo": "https://github.com/smfils1/weather-app",
+      "application": "http://smfils1-weather-app.herokuapp.com/"
+    }
+  ]
+}
