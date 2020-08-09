@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Portfolio: Samuel Fils",
   "homepage": "http://smfils1.github.io/",
   "keywords": [],
   "main": "src/index.js",
