@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     paddingBottom: theme.spacing(1),
+    fontWeight: 600,
   },
   details: {
     padding: theme.spacing(1, 0),
@@ -74,6 +75,7 @@ const Project = ({ project }) => {
     } else {
       return {
         renderItem: () => <VideoItem video={src} />,
+
         embedUrl: src,
         thumbnail: "https://via.placeholder.com/150?text=VIDEO",
       };
@@ -122,11 +124,9 @@ const Project = ({ project }) => {
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} sm={4} alignItems="center">
+        <Grid item xs={12} sm={4}>
           <div className={classes.media}>
             <ImageGallery
-              originalClass={"testing"}
-              thumbnailClass={"testing"}
               items={media}
               defaultImage={media[0]}
               showThumbnails={true}

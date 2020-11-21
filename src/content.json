@@ -43,6 +43,32 @@
       "application": "https://smfils1-youtube-clone.herokuapp.com/"
     },
     {
+      "title": "Online Restaurant System",
+      "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes online. Employees are chefs and delivery people who are managed by the manager/owner. I was involved in build the backend restful api and connecting the frontend with our backend.",
+      "time": "2020",
+      "details": [
+        "VIP customers",
+        "censorship, warning, ordering, and rating systems",
+        "customer and employee managament",
+        "delivery job market",
+        "customer account money management"
+      ],
+      "technologies": [
+        "Spring Boot",
+        "Spring Security",
+        "PostgreSQL",
+        "React.js",
+        "Redux",
+        "Material UI",
+        "Bootstrap"
+      ],
+      "media": [
+        { "type": "image", "src": "https://via.placeholder.com/500" }     
+      ],
+      "repo": "https://github.com/syedsadman16/Online-Restaurant-Backend",
+      "application": "https://syedsadman16.github.io/Online-Restaurant-System-Frontend/"
+    },
+    {
       "title": "SoS",
       "description": "SoS is an open-source FPS game where I was the project manager. I was involved in building some game mechanics, building the entire beta website, and setting up continous delivery for both the beta website & gaming repo using Github Actions.",
       "time": "2020",
