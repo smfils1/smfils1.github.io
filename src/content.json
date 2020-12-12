@@ -44,7 +44,7 @@
     },
     {
       "title": "Online Restaurant System",
-      "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes online. Employees are chefs and delivery people who are managed by the manager/owner. I was involved in build the backend restful api and connecting the frontend with our backend.",
+      "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes and employees. Employees are chefs and delivery people who are managed by the manager/owner. I was involved in building the backend Restful API to meet usecases specified in our project specifications and connecting the frontend with our backend.",
       "time": "2020",
       "details": [
         "VIP customers",
@@ -56,14 +56,22 @@
       "technologies": [
         "Spring Boot",
         "Spring Security",
-        "PostgreSQL",
-        "React.js",
+        "MySQL",
+        "Spring Data JPA",
+        "Json Web Tokens",
+        "React.js",        
         "Redux",
         "Material UI",
         "Bootstrap"
       ],
       "media": [
-        { "type": "image", "src": "https://via.placeholder.com/500" }     
+        { "type": "image", "src": "https://i.imgur.com/AAoHBHA.jpg" },
+        { "type": "image", "src": "https://i.imgur.com/6reZrfx.png" },
+        { "type": "image", "src": "https://i.imgur.com/aamFflc.png" },
+        { "type": "image", "src": "https://i.imgur.com/SWi5cZg.png" },
+        { "type": "image", "src": "https://i.imgur.com/ahihF41.png" },
+        { "type": "image", "src": "https://i.imgur.com/4zkIkwA.png" },
+        { "type": "image", "src": "https://i.imgur.com/tlg9AZ6.png" }          
       ],
       "repo": "https://github.com/syedsadman16/Online-Restaurant-Backend",
       "application": "https://syedsadman16.github.io/Online-Restaurant-System-Frontend/"
@@ -93,6 +101,29 @@
       ],
       "repo": "https://github.com/smfils1/SoS",
       "application": "https://smfils1.github.io/SoS-web/"
+    },
+    {
+      "title": "Centrix",
+      "description": "Centrix is rhythmic bullet hell game highly inspired by the game called Soundodger. My role was to implement beat detection & rhythmic visualizations and player movement & controls.",
+      "time": "2020",
+      "details": [
+        "a PC rhythmic game",
+        "plug and play (keyboard or gamepad controls)"
+      ],
+      "technologies": [
+        "C#",
+        "Unity3D"       
+      ],
+      "media": [
+        { "type": "image", "src": "https://i.imgur.com/L7nsnQz.png" }, 
+        { "type": "image", "src": "https://i.imgur.com/ZzmervP.png" },
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/embed/11l-kFBESAw"
+        }
+      ],
+      "repo": "https://github.com/AbtahiChowdhury/Centrix",
+      "application": null
     },
     {
       "title": "Counter App",

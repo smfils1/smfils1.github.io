@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles, Typography, Button, Grid } from "@material-ui/core/";
+import FullscreenIcon from "@material-ui/icons/Fullscreen";
+import FullscreenExitIcon from "@material-ui/icons/FullscreenExit";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./overrides.css";
@@ -65,7 +67,20 @@ const VideoItem = ({ video }) => {
 };
 
 const Project = ({ project }) => {
+  const [showFullScreenButton, setFullScreenButton] = useState(true);
+  const [startIndex, setStartIndex] = useState(0);
   const classes = useStyles();
+
+  const handleThumbClick = (event, index) => {
+    console.log(index);
+    if (project.media[index].type === "image") {
+      setFullScreenButton(true);
+    } else {
+      setFullScreenButton(false);
+    }
+    setStartIndex(index);
+  };
+
   const media = project.media.map(({ type, src }) => {
     if (type === "image") {
       return {
@@ -118,15 +133,38 @@ const Project = ({ project }) => {
               <Button className={classes.btn} href={project.repo}>
                 Github Repo
               </Button>
-              <Button className={classes.btn} href={project.application}>
-                Open Application
-              </Button>
+              {project.application && (
+                <Button className={classes.btn} href={project.application}>
+                  Open Application
+                </Button>
+              )}
             </div>
           </div>
         </Grid>
         <Grid item xs={12} sm={4}>
           <div className={classes.media}>
             <ImageGallery
+              renderFullscreenButton={(onClick, isFullscreen) => {
+                const GallaryButton = () => (
+                  <button
+                    type="button"
+                    className={`image-gallery-icon image-gallery-fullscreen-button${
+                      showFullScreenButton ? " active" : ""
+                    }`}
+                    onClick={onClick}
+                    aria-label="Open Fullscreen"
+                  >
+                    {isFullscreen ? (
+                      <FullscreenExitIcon fontSize="large" />
+                    ) : (
+                      <FullscreenIcon fontSize="large" />
+                    )}
+                  </button>
+                );
+                if (showFullScreenButton) return <GallaryButton />;
+              }}
+              startIndex={startIndex}
+              onThumbnailClick={handleThumbClick}
               items={media}
               defaultImage={media[0]}
               showThumbnails={true}
