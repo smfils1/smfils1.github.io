@@ -43,7 +43,7 @@
       "application": "https://smfils1-youtube-clone.herokuapp.com/"
     },
     {
-      "title": "Online Restaurant System",
+      "title": "Granny's Sweets",
       "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes and employees. Employees are chefs and delivery people who are managed by the manager/owner. I was involved in building the backend Restful API to meet usecases specified in our project specifications and connecting the frontend with our backend.",
       "time": "2020",
       "details": [
