@@ -25,7 +25,7 @@ const Contacts = () => {
       <a href={"https://github.com/" + content.github}>
         <GitHub className={classes.icon} />
       </a>
-      <a href={"https://www.linkedin.com/in/" + content.github}>
+      <a href={"https://www.linkedin.com/in/" + content.linkedin}>
         <LinkedIn className={classes.icon} />
       </a>
     </div>
