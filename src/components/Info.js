@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1),
     alignSelf: "center",
     backgroundColor: "white",
+    color: "black",
+    "&:hover": {
+      background: "rgb(201, 163, 143)",
+    },
   },
   title: {
     color: grey[300],
@@ -55,7 +59,9 @@ const Info = () => {
         </Typography>
       </div>
       <div className={classes.btn}>
-        <Button href={content.resume}>Resume</Button>
+        <Button style={{ color: "inherit" }} href={content.resume}>
+          Resume
+        </Button>
       </div>
     </div>
   );
