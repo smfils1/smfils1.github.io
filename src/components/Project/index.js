@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
     background: "black",
     margin: theme.spacing(1),
+    "&:hover": {
+      color: "inherit",
+      background: "rgb(201, 163, 143)",
+    },
   },
   tags: {
     display: "flex",
