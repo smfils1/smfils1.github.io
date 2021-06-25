@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     padding: theme.spacing(0.5),
+    display: "flex",
     color: "white",
     backgroundColor: "black",
-    display: "inline",
   },
 }));
 
@@ -33,10 +33,9 @@ const Portfolio = () => {
       <Typography className={classes.text} variant="h4">
         PORTFOLIO
       </Typography>
-      <div>
+      <div className={classes.description}>
         {" "}
         <Typography
-          className={classes.description}
           variant="body1"
           dangerouslySetInnerHTML={{ __html: content.description }}
         />
