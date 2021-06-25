@@ -1,11 +1,11 @@
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { makeStyles, useMediaQuery, useTheme } from "@material-ui/core";
 import clsx from "clsx";
 
 import TopNav from "./TopNav";
 import SideNav from "./SideNav";
-
+import { setDrawer } from "../../redux/actions/layout";
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
@@ -25,8 +25,14 @@ const useStyles = makeStyles((theme) => ({
 const NavBar = ({ children }) => {
   const classes = useStyles();
   const theme = useTheme();
+  const dispatch = useDispatch();
   const isMaxScreenSm = useMediaQuery(theme.breakpoints.down("sm"));
-  const isDrawerOpen = useSelector(({ layout }) => layout.isDrawerOpen);
+  const isDrawerOpen = useSelector(({ layout }) => layout.drawerSize) !== 0;
+
+  useEffect(() => {
+    if (isMaxScreenSm !== null) dispatch(setDrawer(isMaxScreenSm ? 0 : 300));
+  }, [isMaxScreenSm]);
+
   return (
     <div className={classes.root}>
       {isMaxScreenSm && !isDrawerOpen && <TopNav />}

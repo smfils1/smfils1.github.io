@@ -5,6 +5,7 @@ import {
   useTheme,
   useMediaQuery,
 } from "@material-ui/core/";
+import { useSelector } from "react-redux";
 import content from "../../content.json";
 import Info from "../Info";
 import { grey } from "@material-ui/core/colors";
@@ -44,13 +45,13 @@ const useStyles = makeStyles((theme) => ({
     textShadow: "1px 1px 1px rgb(0, 0, 0)",
     marginBottom: theme.spacing(1),
   },
-  info: {
+  mobile_info: {
     padding: theme.spacing(4),
     display: "flex",
     justifyContent: "center",
     backgroundColor: grey[300],
   },
-  mobile_info: {
+  info: {
     position: "absolute",
     bottom: theme.spacing(4),
     right: theme.spacing(4),
@@ -61,6 +62,10 @@ const HomePage = () => {
   const classes = useStyles();
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.only("xs"));
+  const drawerSize = useSelector(({ layout }) => layout.drawerSize);
+  const inLandScapeMode = useMediaQuery(
+    `(orientation: landscape) and (max-width: ${drawerSize + 900}px)`
+  );
 
   const AboutMe = () => {
     const base = content.shortAboutMe.base;
@@ -84,8 +89,8 @@ const HomePage = () => {
       </div>
       <div
         className={clsx({
-          [classes.info]: isSmallScreen,
-          [classes.mobile_info]: !isSmallScreen,
+          [classes.mobile_info]: isSmallScreen || inLandScapeMode,
+          [classes.info]: !(isSmallScreen || inLandScapeMode),
         })}
       >
         <Info />

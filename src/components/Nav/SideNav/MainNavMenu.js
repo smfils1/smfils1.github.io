@@ -60,7 +60,7 @@ const MainNavMenu = () => {
   const dispatch = useDispatch();
   const handleItemClick = () => {
     if (!isMinScreenMd) {
-      dispatch(toggleDrawer(isMinScreenMd));
+      dispatch(toggleDrawer());
     }
   };
 

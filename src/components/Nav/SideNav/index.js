@@ -39,24 +39,20 @@ const useStyles = makeStyles((theme) => ({
 const SideNav = () => {
   const theme = useTheme();
   const isMaxScreenSm = useMediaQuery(theme.breakpoints.down("sm"));
-
-  const isDrawerOpen = useSelector(({ layout }) => layout.isDrawerOpen);
-  let isOpen;
-  if (isMaxScreenSm) isOpen = isDrawerOpen;
-  else isOpen = true; //We will control open by css
+  const isDrawerOpen = useSelector(({ layout }) => layout.drawerSize) !== 0;
   const classes = useStyles();
   return (
     <Drawer
       variant={isMaxScreenSm ? "temporary" : "persistent"}
-      open={isOpen}
+      open={isDrawerOpen}
       className={clsx(classes.drawer, {
-        [classes.drawerOpen]: isOpen,
-        [classes.drawerClose]: !isOpen,
+        [classes.drawerOpen]: isDrawerOpen,
+        [classes.drawerClose]: !isDrawerOpen,
       })}
       classes={{
         paper: clsx(classes.drawer, {
-          [classes.drawerOpen]: isOpen,
-          [classes.drawerClose]: !isOpen,
+          [classes.drawerOpen]: isDrawerOpen,
+          [classes.drawerClose]: !isDrawerOpen,
         }),
       }}
     >

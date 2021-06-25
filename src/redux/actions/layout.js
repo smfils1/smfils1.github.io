@@ -4,10 +4,10 @@ const toggleDrawer = () => {
   };
 };
 
-const setDrawer = (isDrawerOpen) => {
+const setDrawer = (drawerSize) => {
   return {
     type: "SET_DRAWER",
-    payload: { isDrawerOpen },
+    payload: { drawerSize },
   };
 };
 
