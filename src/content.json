@@ -17,12 +17,12 @@
   "projects": [
     {
       "title": "YouTube Clone",
-      "description": "This is a personal project that attempts to implement the main features of YouTube, an online video-sharing platform, using the MERN stack.",
+      "description": "This is an implementation of Google's YouTube responsive UI/UX, and backend features as a Restful API using the MERN stack.",
       "time": "2020",
       "details": [
-        "Google OAuth2",
-        "video uploading, streaming, commenting, and rating",
-        "trending, recommended, and categorized videos"
+        "Google login",
+        "Video uploading, streaming, commenting, and rating",
+        "Trending, recommended, and categorized videos"
       ],
       "technologies": [
         "MongoDB",
@@ -44,14 +44,14 @@
     },
     {
       "title": "Granny's Sweets",
-      "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes and employees. Employees are chefs and delivery people who are managed by the manager/owner. I was involved in building the backend Restful API to meet usecases specified in our project specifications and connecting the frontend with our backend.",
+      "description": "This is a web application for a restaurant that manages restaurant employees and customers. Customers can order dishes, deposit money, and review dishes and employees. Employees are chefs and delivery people who are managed by the manager/owner. As part of an agile team, I was involved in building the backend Restful API to meet usecases specified in our project specifications. I also helped in connecting the frontend with our backend.",
       "time": "2020",
       "details": [
+        "Customer and employee accounts",
         "VIP customers",
-        "censorship, warning, ordering, and rating systems",
-        "customer and employee managament",
-        "delivery job market",
-        "customer account money management"
+        "Automated censorship",
+        "Warning, ordering, and rating systems",
+        "Delivery job market"
       ],
       "technologies": [
         "Spring Boot",
@@ -78,12 +78,11 @@
     },
     {
       "title": "SoS",
-      "description": "SoS is an open-source FPS game where I was the project manager. I was involved in building some game mechanics, building the entire beta website, and setting up continous delivery for both the beta website & gaming repo using Github Actions.",
+      "description": "SoS is an C# Unity FPS game. As project manager of an agile team, I was involved in building some game mechanics, controls, the entire beta website, and setting up CI/CD using Github Actions.",
       "time": "2020",
       "details": [
-        "a online web FPS game",
-        "plug and play (keyboard or gamepad controls)",
-        "a game of survival"
+        "A online web FPS survival game",
+        "Plug and play (keyboard or gamepad controls)"
       ],
       "technologies": [
         "C#",
@@ -104,7 +103,7 @@
     },
     {
       "title": "Centrix",
-      "description": "Centrix is rhythmic bullet hell game highly inspired by the game called Soundodger+. My role was to implement beat detection & rhythmic visualizations and player movement & controls.",
+      "description": "Centrix is rhythmic bullet hell game highly inspired by the game called Soundodger+. As part of an agile team, I implemented beat detection, rhythmic visualizations, player movement, and controls.",
       "time": "2020",
       "details": [
         "a PC rhythmic game",
@@ -127,14 +126,14 @@
     },
     {
       "title": "Counter App",
-      "description": "This is a personal project which is more than a simple counter app. The main goal of the project was to implement an authentication system and show updates in realtime using Sockets across multiple users using the MERN stack.",
+      "description": "A complex counter app. The main goal of this project was to implement an authentication system and show updates in realtime using Web Sockets across multiple users using the MERN stack.",
       "time": "2020",
       "details": [
-        "Google OAuth2",
-        "email & password",
-        "forgot password",
-        "realtime updates",
-        "history logs"
+        "Google login",
+        "Email & password login",
+        "Forgot password",
+        "Realtime updates",
+        "History logs"
       ],
       "technologies": [
         "Socket.io",
@@ -167,12 +166,12 @@
     },
     {
       "title": "HashTag HotLine",
-      "description": "This is an open-source application where my main role was building the backend architecture and unit tests using AWS microservices like DynamoDB, Lambda, and Amplify. HashTag Hotline is an online, location-based twitter communications application for NGO's in the Global South.",
+      "description": "HashTag Hotline is an online, location-based twitter communications application for NGO's in the Global South. As part of an agile team, I was involved in building the frontend & backend architecture and unit tests using AWS microservices like DynamoDB, Lambda, and Amplify.",
       "time": "2019",
       "details": [
-        "dashboard filters reports through defined tags",
-        "automated and non-automated report twitter responses",
-        "live report feed & map view"
+        "Dashboard filters reports through defined tags",
+        "Automated and non-automated twitter report responses",
+        "Live report feed & map view"
       ],
       "technologies": [
         "React.js",
@@ -206,7 +205,6 @@
           "src": "https://github.com/Hongzred/HashTag_HotLine/raw/master/README_images/image-20191220182526362.png"
         }
       ],
-
       "repo": "https://github.com/Hongzred/HashTag_HotLine",
       "application": "https://master.d2nb81n0vt6kb5.amplifyapp.com/"
     },
@@ -215,9 +213,9 @@
       "description": "This is a server-side location based weather app using Node.js.",
       "time": "2019",
       "details": [
-        "location based weather reports",
-        "weather search",
-        "location autocomplete"
+        "Local weather reports",
+        "Weather search",
+        "Location autocomplete"
       ],
       "technologies": [
         "Bootstrap 4",
