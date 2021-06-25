@@ -166,7 +166,7 @@
     },
     {
       "title": "HashTag HotLine",
-      "description": "HashTag Hotline is an online, location-based twitter communications application for NGO's in the Global South. As part of an agile team, I was involved in building the frontend & backend architecture and unit tests using AWS microservices like DynamoDB, Lambda, and Amplify.",
+      "description": "HashTag Hotline is an online location-based twitter communications application for NGO's in the Global South. As part of an agile team, I was involved in building the frontend & backend architecture and unit tests using AWS microservices such as DynamoDB, Lambda, and Amplify.",
       "time": "2019",
       "details": [
         "Dashboard filters reports through defined tags",
