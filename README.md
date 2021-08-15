@@ -8,7 +8,7 @@
 
 ### Configuration
 
-- `content.json` contains the configurable content this template
+- `content.json` contains the configurable content for this template.
 
 ### Starting the App
 
